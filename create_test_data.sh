@@ -1,21 +1,20 @@
 #!/bin/bash
 #########################################################################################
-#	        				Veeam Make Data Script										#
-#			        		(c)2019 adam.bergh@veeam.com								#
-#   Usage: makedata.sh <Top Dirs> <Sub Dirs> <Files per Dir> 							#
-#	This script requires GNU Parallel in be installed "apt-get install parallel"		#
-#																						#
-#																						#
-#																						#
+#	        		Veeam Create Test Data Script				#
+#			        (c)2019 adam.bergh@veeam.com				#
+#   	Usage: create_test_data.sh <Top Dirs> <Sub Dirs> <Files per Dir> 		#
+#	This script requires GNU Parallel in be installed "apt-get install parallel"	#
+#											#
+#											#
+#											#
 #########################################################################################
 
 if [ -z $1 ] || [ -z $3 ]
 then
-
 	echo "makedata.sh (c) 2019 Veeam Software adam.bergh@veeam.com"
 	echo ""
-	echo "Usage: makedata.sh <Count of Top Directories> <Count of Sub Dirs in Each Top Dir> <Number of Files in Each Dir>"
-	echo "Example: makedir.sh 5 10 10"
+	echo "Usage: create_test_data.sh <Count of Top Directories> <Count of Sub Dirs in Each Top Dir> <Number of Files in Each Dir>"
+	echo "Example: create_test_data.sh 5 10 10"
 	echo "This would create 5 top level dirs and 10 sub dirs in each top level directory and 10 files in each directory"
 	exit
 fi
@@ -61,7 +60,7 @@ mkdir -p $string2
 
 
 done
-################################################3
+################################################
 
 find . -type d > dirs.txt #put directory tree into a text file for use in the below loop
 
