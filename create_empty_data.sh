@@ -1,21 +1,21 @@
 #!/bin/bash
 #########################################################################################
-#	        				Veeam Make Empty Data Script								#
-#			        		(c)2019 adam.bergh@veeam.com								#
-#   Usage: makeemptydata.sh <Top Dirs> <Sub Dirs> <Files per Dir> 						#
-#	This script requires GNU Parallel in be installed "apt-get install parallel"		#
-#																						#
-#																						#
-#																						#
+#	        		Veeam Create Empty Data Script				#
+#			       (c)2019 adam.bergh@veeam.com				#
+#   Usage: create_empty_data.sh <Top Dirs> <Sub Dirs> <Files per Dir> 			#
+#	This script requires GNU Parallel in be installed "apt-get install parallel"	#
+#	This script uses touch to create empty data files				#
+#											#
+#											#
 #########################################################################################
 
 if [ -z $1 ] || [ -z $3 ]
 then
 
-	echo "makeempydata.sh (c) 2019 Veeam Software adam.bergh@veeam.com"
+	echo "create_empty_data.sh (c) 2019 Veeam Software adam.bergh@veeam.com"
 	echo ""
-	echo "Usage: makeemptydata.sh <Count of Top Directories> <Count of Sub Dirs in Each Top Dir> <Number of Files in Each Dir>"
-	echo "Example: makeemptynasdata.sh 5 10 10"
+	echo "Usage: create_empty_data.sh <Count of Top Directories> <Count of Sub Dirs in Each Top Dir> <Number of Files in Each Dir>"
+	echo "Example: create_empty_data.sh.sh 5 10 10"
 	echo "This would create 5 top level directories and 10 sub directories in each top level directory and 10 files in each"
 	exit
 fi
