@@ -1,6 +1,6 @@
 <h1><strong>Create Test Data Script</strong></h1>
 <hr />
-<h4><br />Linux bash script that allows creation of test for NAS backup testing.</h4>
+<h4><br />Linux bash script that allows creation of random test files for NAS backup testing.</h4>
 <p>This script uses the dd linux command to create files with random uncrompressible data.</p>
 <p><br /><strong>Usage:</strong> create_test_data.sh &lt;Count of Top Directories&gt; &lt;Count of Sub Dirs in Each Top Dir&gt; &lt;Number of Files in Each Dir&gt;</p>
 <p><br /><strong>Example usage:</strong> create_test_data.sh 5 10 10 </p>
