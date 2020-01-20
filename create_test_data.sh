@@ -11,7 +11,7 @@
 
 if [ -z $1 ] || [ -z $3 ]
 then
-	echo "makedata.sh (c) 2019 Veeam Software adam.bergh@veeam.com"
+	echo "create_test_data.sh (c) 2019 Veeam Software adam.bergh@veeam.com"
 	echo ""
 	echo "Usage: create_test_data.sh <Count of Top Directories> <Count of Sub Dirs in Each Top Dir> <Number of Files in Each Dir>"
 	echo "Example: create_test_data.sh 5 10 10"
