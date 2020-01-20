@@ -82,6 +82,6 @@ end=`date +%s`
 runtime=$((end-start))
 
 echo "#########################################################################################"
-echo "Done! Copy finished at $(date +%y/%m/%d) at $(date +%H:%M:%S) - Thanks for using Veeam!"
+echo "Done! Script finished at $(date +%y/%m/%d) at $(date +%H:%M:%S) - Thanks for using Veeam!"
 echo "It took $runtime seconds to complete this job"
 echo "#########################################################################################"
